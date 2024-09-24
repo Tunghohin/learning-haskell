@@ -1,5 +1,6 @@
-module Sample.MyDrop where
+module Sample.MyDrop(myDrop) where
 
-MyDrop n list = if n <= 0 || null list
+myDrop :: Int -> [a] -> [a]
+myDrop n list = if n <= 0 || null list
                 then list
-                else MyDrop (n - 1) (tail list)
+                else myDrop (n - 1) (tail list)
