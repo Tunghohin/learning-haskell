@@ -56,7 +56,7 @@ common warnings
 library
     exposed-modules:  Sample.MyDrop
     hs-source-dirs:   src
-    build-depends:    base ^>=4.13.0.0
+    build-depends:    base >= 4.13.0.0 && < 4.18
     default-language: Haskell2010
 
 executable learning-haskell
@@ -73,7 +73,7 @@ executable learning-haskell
     -- other-extensions:
 
     -- Other library packages from which modules are imported.
-    build-depends:    base ^>=4.13.0.0,
+    build-depends:    base >= 4.13 && < 4.18,
                       learning-haskell
 
     -- Directories containing source files.
